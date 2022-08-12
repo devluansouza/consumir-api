@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cadastro de usuários</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+		<!-- Meu estilo -->
+		<link rel="stylesheet" href="./css/style.css" />
+		<!-- Icones font-awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+
+	<body>
+		<!-- Topo da página -->
+		<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+			<!-- Nome do sistema -->
+			<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="index.html">Cadastro de usuários</a>
+
+			<!-- Botão para abrir o menu quando a tela for menor que 768px -->
+			<button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</header>
+
+		<!-- Página -->
+		<div class="container-fluid">
+			<div class="row">
+				<!-- Menu lateral -->
+				<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+					<div class="position-sticky pt-3 sidebar-sticky">
+						<ul class="nav flex-column">
+							<!-- Página inicial -->
+							<li class="nav-item">
+								<a class="nav-link" title="Página inicial" aria-current="page" href="index.html">
+									<i class="fa-solid fa-house"></i>
+									Página inicial
+								</a>
+							</li>
+							<!-- Cadastrar -->
+							<li class="nav-item">
+								<a class="nav-link active" title="Cadastrar usuário" aria-current="page" href="cadastrar.html">
+									<i class="fa-solid fa-user-plus"></i>
+									Cadastrar
+								</a>
+							</li>
+							<!-- Consultar -->
+							<li class="nav-item">
+								<a class="nav-link" title="Consultar usuário" aria-current="page" href="consultar.html">
+									<i class="fa-solid fa-magnifying-glass"></i>
+									Consultar
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<!-- Conteúdo da página -->
+				<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+					<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+						<!-- Título da página -->
+						<h1 class="h2">Cadastrar usuário</h1>
+					</div>
+
+					<!-- Formulário -->
+					<form class="row g-3 needs-validation" novalidate>
+						<!-- Nome -->
+						<div class="col-md-4">
+							<label for="inputNome" class="form-label fw-bold">Nome <sup class="text-danger">*</sup></label>
+							<input type="text" class="form-control" id="inputNome" required />
+							<div class="invalid-feedback">Informe o nome</div>
+						</div>
+
+						<!-- Email -->
+						<div class="col-md-4">
+							<label for="inputEmail" class="form-label fw-bold">Email <sup class="text-danger">*</sup></label>
+							<input type="email" class="form-control" id="inputEmail" required />
+                            <div class="invalid-feedback">Informe o email</div>
+						</div>
+
+                        <!-- Botão para enviar o formulário -->
+						<div class="col-12">
+							<button type="submit" class="btn btn-primary">Cadastrar</button>
+						</div>
+					</form>
+				</main>
+			</div>
+		</div>
+
+		<!-- Bootstrap JS -->
+		<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Meu JavaScript -->
+        <script src="./js/main.js"></script>
+	</body>
+</html>
